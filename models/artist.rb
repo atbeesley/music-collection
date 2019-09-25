@@ -1,5 +1,5 @@
 require('pg')
-reqires_relative('../db/sql_runner')
+require_relative('../db/sql_runner')
 require_relative('album')
 
 class Artist
