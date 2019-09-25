@@ -30,7 +30,12 @@ class Album
     artist_hash = results[0]
     artist = Artist.new(artist_hash)
     return artist
-    
+
+  end
+
+  def self.delete_all()
+    sql = "DELETE FROM albums"
+    SqlRunner.run(sql)
   end
 
   def self.all()
